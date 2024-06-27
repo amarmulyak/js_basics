@@ -6,3 +6,5 @@ isGreater2 = a > '10'; // true
 console.log(isGreater);
 console.log(isGreaterOrEqual);
 console.log(isGreater2);
+
+console.log(typeof a === 'number')
