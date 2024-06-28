@@ -25,5 +25,7 @@ function check_type(variable) {
 check_type(a)
 
 var arrow_function = (a, b) => a + b;
-
 console.log(arrow_function('Hello ', 'World!'));
+
+var arrow_function = a => a *= a;
+console.log(arrow_function(5));
