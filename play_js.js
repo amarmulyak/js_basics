@@ -1,5 +1,6 @@
-let a = [1, 2, 3, 4];
-b = a.unshift(55);
-
+'use strict';
+var b;
+var b = '55';
+a = parseInt('55')
+console.log(typeof a);
 console.log(a);
-console.log(b);
