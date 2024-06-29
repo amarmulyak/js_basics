@@ -1,14 +1,14 @@
 let age = 5;
 age++;
 age--;
-remainder = Math.floor(age / 2);
+let remainder = Math.floor(age / 2);
 
 function greet(name, lastName) {
     console.log('Hello ' + name + ' ' + lastName + '!');
     console.log(`Hello ${name} ${lastName}!`);
     console.log(`Age is ${age}`);
     console.log(`Age is ${remainder}`);
-    a = 1 // without let a will be global variable
+    let a = 1 // without let a will be global variable
 
 }
 
@@ -22,7 +22,7 @@ function check_type(variable) {
     }
 }
 
-check_type(a)
+// check_type(a)
 
 var arrow_function = (a, b) => a + b;
 console.log(arrow_function('Hello ', 'World!'));
@@ -31,7 +31,7 @@ var arrow_function = a => a *= a;
 console.log(arrow_function(5));
 
 
-const sum = (function () {
+export const sum = (function () {
     return function(...args) {
         return args.reduce((a, b) => a + b, 0);
     };
