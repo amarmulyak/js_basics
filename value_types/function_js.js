@@ -29,3 +29,37 @@ console.log(arrow_function('Hello ', 'World!'));
 
 var arrow_function = a => a *= a;
 console.log(arrow_function(5));
+
+
+const sum = (function () {
+    return function(...args) {
+        return args.reduce((a, b) => a + b, 0);
+    };
+})()
+
+console.log('res ' + sum(10, 20, 30));
+
+
+let myObj = {one: 1, two: 2, three: 3};
+let {one: par_one} = myObj;
+console.log(par_one);
+
+let myObj2 = {
+    one: {min: 10, max: 20}, two: 2, three: 3
+};
+let {one: {min: par_one_min}} = myObj2;
+console.log(par_one_min);
+
+
+let stats = {
+    min: 100,
+    max: 200,
+    other: 5,
+    whatever: 10
+};
+
+let myrRes = function({min, max}) {
+    return [min, max];
+}
+
+console.log(myrRes(stats));
